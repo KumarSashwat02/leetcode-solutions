@@ -5,7 +5,10 @@ class Solution {
         for(int i = 0; i<gain.length ; i++){
             int y = gain[i] + alt;
             alt = y;
-            highest = Math.max(highest,alt);
+            // highest = Math.max(highest,alt);
+            if(highest<alt){
+                highest = alt;
+            }
         }
         return highest;
     }

@@ -28,12 +28,6 @@ class Solution {
         if(root.val < high){
             sum = sum + rangeSumBST(root.right, low, high);
         }
-        // if(root.left!=null ){
-        //     rangeSumBST(root.left, low, high);
-        // }
-        // if(root.right!= null ){
-        //     rangeSumBST(root.right, low, high);
-        // }
         return sum;
     }
 }

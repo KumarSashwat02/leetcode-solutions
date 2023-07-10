@@ -5,19 +5,16 @@ class Solution {
         if(target == nums[mid]){
             index = mid;
         }
-        if(target> nums[mid]){
+        if(target > nums[mid]){
             for(int i=mid+1; i<nums.length; i++){
                 if(nums[i] == target)
                 index = i;
                 
             }
         }
-        if(target < nums[mid]){
-            for(int i=0; i<mid; i++){
-                if(nums[i] == target){
-                    index = i;
-                    
-                }
+        for(int i=0; i<mid; i++){
+            if(nums[i] == target){
+                index = i;       
             }
         }
         return index;

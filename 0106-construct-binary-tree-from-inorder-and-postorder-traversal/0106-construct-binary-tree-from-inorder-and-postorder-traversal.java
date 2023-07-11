@@ -20,7 +20,7 @@ class Solution {
         }
         int rootData = post[postE];
         TreeNode root = new TreeNode(rootData);
-        int index = -1;
+        int index = -1;    // index of rootData in inorder array
         for(int i=inS; i<=inE; i++){
             if(in[i] == rootData){
                 index = i;

@@ -14,8 +14,6 @@ class Solution {
         if(count > 1){
             return s.length() - count + 1 ;
         }
-        else{
-            return s.length();
-        }
+        return s.length();
     }
 }

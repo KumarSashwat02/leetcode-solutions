@@ -24,17 +24,45 @@ class Solution{
         dp[index][buy][limit] = profit;
         return dp[index][buy][limit];
     }
-    public int maxProfit(int[] prices){
+
+    public int solveDp(int[] prices){
         int n = prices.length;
-        int [][][] dp = new int[n][2][3];
-        for(int i=0; i<n; i++){
-            for(int j=0; j<2; j++){
-                for(int k=0; k<3; k++){
-                    dp[i][j][k] = -1;
+        int [][][] dp = new int [n+1][2][3];
+        
+        for(int i = n-1; i>=0; i--){
+            for(int j=0; j<=1; j++){
+                for(int l=1; l<=2; l++){
+                    int profit = 0;
+                    if(j==1){
+                        int buyKaro = -prices[i] + dp[i+1][0][l];
+                        int skipKaro = 0 + dp[i+1][1][l];
+                        profit = Math.max(buyKaro, skipKaro);
+                    }
+                    else{
+                        int sellKaro = prices[i] + dp[i+1][1][l-1];
+                        int skipKaro = 0 + dp[i+1][0][l];
+                        profit = Math.max(sellKaro , skipKaro);
+                    }
+                    dp[i][j][l] = profit;
                 }
             }
         }
-        return solve(0, 1, prices, 2, dp);
+        return dp[0][1][2];
+    }
+
+    public int maxProfit(int[] prices){
+        // int n = prices.length;
+        // int [][][] dp = new int[n][2][3];
+        // for(int i=0; i<n; i++){
+        //     for(int j=0; j<2; j++){
+        //         for(int k=0; k<3; k++){
+        //             dp[i][j][k] = -1;
+        //         }
+        //     }
+        // }
+        // return solve(0, 1, prices, 2, dp);
+
+        return solveDp(prices);
     }
 }
 

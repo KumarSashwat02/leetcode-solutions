@@ -1,0 +1,2 @@
+/* Write your PL/SQL query statement below */
+select d.name  Department, e.name Employee, Salary from Employee e inner join Department d on d.id=e.departmentid where 4>(select count (Distinct salary ) from  employee e1 where e1.salary>=e.salary and e1.departmentid=e.departmentid);

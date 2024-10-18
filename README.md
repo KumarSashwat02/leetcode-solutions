@@ -24,6 +24,7 @@
 ## String
 |  |
 | ------- |
+| [0345-reverse-vowels-of-a-string](https://github.com/KumarSashwat02/leetcode-solutions/tree/master/0345-reverse-vowels-of-a-string) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/KumarSashwat02/leetcode-solutions/tree/master/2292-counting-words-with-a-given-prefix) |
 ## String Matching
 |  |
@@ -33,4 +34,8 @@
 |  |
 | ------- |
 | [0605-can-place-flowers](https://github.com/KumarSashwat02/leetcode-solutions/tree/master/0605-can-place-flowers) |
+## Two Pointers
+|  |
+| ------- |
+| [0345-reverse-vowels-of-a-string](https://github.com/KumarSashwat02/leetcode-solutions/tree/master/0345-reverse-vowels-of-a-string) |
 <!---LeetCode Topics End-->

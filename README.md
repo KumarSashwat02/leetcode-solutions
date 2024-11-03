@@ -59,10 +59,19 @@
 |  |
 | ------- |
 | [0437-path-sum-iii](https://github.com/KumarSashwat02/leetcode-solutions/tree/master/0437-path-sum-iii) |
+| [0871-keys-and-rooms](https://github.com/KumarSashwat02/leetcode-solutions/tree/master/0871-keys-and-rooms) |
 | [0904-leaf-similar-trees](https://github.com/KumarSashwat02/leetcode-solutions/tree/master/0904-leaf-similar-trees) |
 ## Binary Tree
 |  |
 | ------- |
 | [0437-path-sum-iii](https://github.com/KumarSashwat02/leetcode-solutions/tree/master/0437-path-sum-iii) |
 | [0904-leaf-similar-trees](https://github.com/KumarSashwat02/leetcode-solutions/tree/master/0904-leaf-similar-trees) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0871-keys-and-rooms](https://github.com/KumarSashwat02/leetcode-solutions/tree/master/0871-keys-and-rooms) |
+## Graph
+|  |
+| ------- |
+| [0871-keys-and-rooms](https://github.com/KumarSashwat02/leetcode-solutions/tree/master/0871-keys-and-rooms) |
 <!---LeetCode Topics End-->
